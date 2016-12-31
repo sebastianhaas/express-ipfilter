@@ -66,7 +66,7 @@ module.exports = function ipfilter(ips, opts) {
 
     if(headerIp) {
       var splitHeaderIp = headerIp.split(',');
-      ipAddress = splitHeaderIp[0];
+      ipAddress = splitHeaderIp[splitHeaderIp.length-1];
     }
 
     if(!ipAddress) {
